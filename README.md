@@ -31,6 +31,17 @@ Note that there are possible one more melodic track in one song.
 * Feature Extraction
 * Classification (Random Forest, n_estimation=100)
 
+### Figures
+
+* Testing Stage
+![image](result/confusion_test.png)
+
+* Feature Distribution
+![image](result/pitch_mean.png)
+![image](result/num_pitches.png)
+![image](result/poly_ratio.png)
+
+***For further understanding, please refer to [here](notebook/Analysis.ipynb)**
 ---
 ## Usage
 
