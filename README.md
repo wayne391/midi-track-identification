@@ -41,7 +41,7 @@ Note that there are possible one more melodic track in one song.
 ![image](result/num_pitches.png)
 ![image](result/poly_ratio.png)
 
-***For further understanding, please refer to [here](notebook/Analysis.ipynb)**
+*For further understanding, please refer to [here](notebook/Analysis.ipynb)*
 ---
 ## Usage
 
