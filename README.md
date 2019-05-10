@@ -12,7 +12,7 @@ There are two main goals of this task:
     * The program number and channel number are not in GM Midi format.
 * Separate perceptually melodic **tracks** based on hand-labeling data
 
-Note that there are possible one more melodic track in one song.
+Note that it's possible that there are more than one melodic tracks in a song.
 
 ---
 
