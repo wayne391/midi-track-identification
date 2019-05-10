@@ -8,7 +8,7 @@ Categorize tracks of midi files into four classes:
 
 There are two main goals of this task:
 * Data Cleansing:  
-    * The track names in midi files usually have less useful meaning.
+    * The track names in midi files are usually have less meaningful.
     * The program number and channel number are not in GM Midi format.
 * Separate perceptually melodic **tracks** based on hand-labeling data
 
