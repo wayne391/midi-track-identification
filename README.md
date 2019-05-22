@@ -1,10 +1,10 @@
 # Midi-Track-Idenfication
 
 Categorize tracks of midi files into four classes:  
-* Melody
-* Drum
-* Bass
-* Other
+* 0: Melody
+* 1: Drum
+* 2: Bass
+* 3: Other
 
 There are two main goals of this task:
 * Data Cleansing:  
