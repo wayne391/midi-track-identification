@@ -1,4 +1,4 @@
-# Midi-Track-Idenfication
+# Midi-Track-Identification
 
 Categorize tracks of midi files into four classes:  
 * 0: Melody
