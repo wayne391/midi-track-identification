@@ -1,5 +1,5 @@
 import numpy as np
-from utils.misc import unit_normalize
+from track_identifier.utils.misc import unit_normalize
 
 
 def convert_to_notestream(pianoroll):

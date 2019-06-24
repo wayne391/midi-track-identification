@@ -3,7 +3,11 @@ import time
 import argparse
 import datetime
 import numpy as np
-from utils import features
+
+import sys
+sys.path.append('../')
+
+from track_identifier.utils import features
 
 
 def proc(tracks_dir, output_dir):
@@ -50,7 +54,7 @@ def proc(tracks_dir, output_dir):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--tracks_dir', default='Dataset/tracks', help='tracks')
-    parser.add_argument('--output_dir', default='Dataset/features', help='destination')
+    parser.add_argument('--tracks_dir', default='../data/tracks', help='tracks')
+    parser.add_argument('--output_dir', default='../data/features', help='destination')
     args = parser.parse_args()
     proc(args.tracks_dir, args.output_dir)

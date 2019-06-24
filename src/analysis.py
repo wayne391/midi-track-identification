@@ -5,9 +5,11 @@ import datetime
 import numpy as np
 import pandas as pd
 import seaborn as sn
-
-from utils import features, vis, misc
 from matplotlib import pyplot as plt
+
+import sys
+sys.path.append('../')
+from track_identifier.utils import features, vis, misc
 
 from sklearn import ensemble, preprocessing, metrics
 from sklearn.metrics import confusion_matrix
@@ -30,7 +32,7 @@ INSTR_COLOR = ['blue', 'tomato', 'green', 'gold']
 # hyper parameter
 N_ESTIMATORS = 100
 
-def proc(features_dir, result_dir):
+def proc(features_dir, result_dir, model_dir, model_name):
     if not os.path.exists(result_dir):
         os.makedirs(result_dir)
 
@@ -106,7 +108,7 @@ def proc(features_dir, result_dir):
     predict_train_y = forest.predict(train_x)
 
     # save
-    model_name = os.path.join(result_dir, 'model.pkl')
+    model_name = os.path.join(model_dir, model_name)
     joblib.dump(forest, model_name)
 
     # accuracy
@@ -164,12 +166,14 @@ def proc(features_dir, result_dir):
 
 if __name__ == '__main__':
     # path
-    features_dir = 'Dataset/features'
-    result_dir = 'result'
+    features_dir = '../data/features'
+    result_dir = '../doc'
+    model_dir = '../track_identifier/model'
+    model_name =  '2019-6-24.pkl'
 
     # processing
     start_time = time.time()
-    proc(features_dir, result_dir)
+    proc(features_dir, result_dir, model_dir, model_name)
     end_time = time.time()
 
     # finish

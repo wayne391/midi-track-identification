@@ -61,7 +61,7 @@ def proc(midi_dir, output_dir):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--midi_dir', default='Raw_Data/jazz_realbook', help='raw data')
-    parser.add_argument('--output_dir', default='Dataset/tracks', help='destination')
+    parser.add_argument('--midi_dir', default='../data/raw/jazz_realbook', help='raw data')
+    parser.add_argument('--output_dir', default='../data/tracks', help='destination')
     args = parser.parse_args()
     proc(args.midi_dir, args.output_dir)

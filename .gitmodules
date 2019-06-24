@@ -1,8 +1,0 @@
-[submodule "midi2pianoroll"]
-	path = midi2pianoroll
-	url = https://github.com/wayne391/midi2pianoroll.git
-	branch = miditoolkit
-[submodule "miditoolkit"]
-	path = miditoolkit
-	url = https://github.com/wayne391/midi2pianoroll.git
-	branch = miditoolkit
